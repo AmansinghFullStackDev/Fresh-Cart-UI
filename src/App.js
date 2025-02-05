@@ -8,6 +8,7 @@ import ProductsComponents from './Components/FeaturedCategories/ProductsComponen
 import Discount from './Components/DiscountOffer/Discount';
 import PopularProducts from './Components/PopularProducts/PopularProducts';
 import SellingProducts from './Components/SellingProduct/SellingProducts';
+import Info from './Components/Info/Info';
 
 function App() {
   return (
@@ -41,6 +42,8 @@ function App() {
         <p>Daily Best Sells</p>
       </div>
       <SellingProducts /> {/*Daily Best Sells*/}
+
+      <Info /> {/*Info*/}
 
       <div className='bg-green-500 h-80 mt-5'>
         <p>dwbvgfqewjbgoewgvwebg</p>
