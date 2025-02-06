@@ -14,13 +14,14 @@ function App() {
   return (
     <div>
       <MiniNavbar />
-      <Navbar />
 
+      <Navbar />
+      {/*
       <div className='h-[90vh] w-[83%] overflow-hidden ml-28 pt-5'>
         <img src={BackgroundImage} alt='bg'
           className='rounded-2xl h-full w-full'
         />
-      </div>  {/*  background image */}
+      </div>  
 
       <div className='h-[40vh] w-[83%] ml-28 pt-5'>
         <div className='h-[10%] w-full text-xl flex items-center justify-between font-semibold'>
@@ -32,22 +33,22 @@ function App() {
         </div>
 
         <ProductsComponents />
-      </div>      {/*Favourite Categories*/}
+      </div>     
 
-      <Discount />  {/**Discount Offer */}
+      <Discount />  
 
-      <PopularProducts /> {/*Popular Products */}
+      <PopularProducts /> 
 
       <div className='h-[5vh] w-[83%] text-black text-2xl font-semibold mt-24 ml-28'>
         <p>Daily Best Sells</p>
       </div>
-      <SellingProducts /> {/*Daily Best Sells*/}
+      <SellingProducts /> 
 
-      <Info /> {/*Info*/}
+      <Info /> 
 
       <div className='bg-green-500 h-80 mt-5'>
         <p>dwbvgfqewjbgoewgvwebg</p>
-      </div>
+      </div> */}
     </div>
   );
 }
