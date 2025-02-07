@@ -17,28 +17,28 @@ function App() {
       <MiniNavbar />
 
       <Navbar />
-      {/* <Menu /> */}
-      {/*
-      <div className='h-[90vh] w-[83%] overflow-hidden ml-28 pt-5'>
-        <img src={BackgroundImage} alt='bg'
-          className='rounded-2xl h-full w-full'
-        />
-      </div>  
 
-      <div className='h-[40vh] w-[83%] ml-28 pt-5'>
-        <div className='h-[10%] w-full text-xl flex items-center justify-between font-semibold'>
+      <div className='h-full w-[83%] overflow-hidden ml-10 sm:ml-14 md:ml-20 xl:ml-28 pt-5'>
+        <img src={BackgroundImage} alt='bg'
+          className='rounded-2xl h-auto w-auto'
+        />
+      </div>
+
+      <div className='h-[40vh] w-[83%] ml-8 sm:ml-14 md:ml-20 xl:ml-28 pt-5 mt-8'>
+        <div className='h-[10%] w-full text-base sm:text-xl flex items-center justify-between font-semibold'>
           <p>Featured Categories</p>
-          <div className='flex items-center justify-end gap-5 border border-gray-100'>
-            <ArrowCircleLeftOutlinedIcon style={{ fontSize: '40' }} />
-            <ArrowCircleRightOutlinedIcon style={{ fontSize: '40' }} />
+          <div className='flex items-center justify-end gap-5 border border-gray-100 '>
+            <ArrowCircleLeftOutlinedIcon style={{ fontSize: '35' }} />
+            <ArrowCircleRightOutlinedIcon style={{ fontSize: '35' }} />
           </div>
         </div>
 
         <ProductsComponents />
-      </div>     
+      </div>
 
-      <Discount />  
 
+      <Discount />
+      {/*   
       <PopularProducts /> 
 
       <div className='h-[5vh] w-[83%] text-black text-2xl font-semibold mt-24 ml-28'>

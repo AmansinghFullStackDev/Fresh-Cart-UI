@@ -3,7 +3,7 @@ import { ProductList } from './Products'
 
 const ProductsComponents = () => {
     return (
-        <div className='w-full mt-5 grid grid-cols-4 gap-4 h-[35vh]'>
+        <div className='w-full mt-5 grid sm:grid-cols-2 lg:grid-cols-4 gap-4 h-[35vh]'>
             {ProductList.map((item) => (
                 <div className="pt-10 border border-gray-200 rounded-lg">
                     <img src={item.image} alt={item.title} className="w-32 h-32 object-cover rounded-md mx-auto" />

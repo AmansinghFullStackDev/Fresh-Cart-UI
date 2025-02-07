@@ -8,7 +8,7 @@ const Menu = () => {
   return (
     <section className='h-auto w-72 rounded-2xl bg-[#f0f3f2] absolute right-0 mt-[510px]'>
 
-      <div className='flex items-center h-16 w-full gap-14 pl-10 border-b-4 border-gray-500 border-double'>
+      <div className='flex items-center h-16 w-full gap-14 pl-10 border-b-4 border-gray-500 border-dotted'>
         <Badge badgeContent={4} color='success' className='text-gray-500 hover:text-green-500'>
           <FavoriteBorderIcon fontSize='large' />
         </Badge>

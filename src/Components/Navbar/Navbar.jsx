@@ -59,7 +59,7 @@ const Navbar = () => {
             </div>
 
 
-            <div className="h-1/2 flex items-center justify-between bg-red-500 ">
+            <div className="h-1/2 flex items-center justify-between">
                 <div className='w-[28%] h-full pt-3'>
                     <div style={{ backgroundColor: '#0aad0a' }}
                         className="w-[65%] h-[80%] hidden lg:flex items-center justify-center gap-1 text-1xl border border-black ml-28 rounded-lg">
@@ -68,7 +68,7 @@ const Navbar = () => {
                     </div>
                 </div>
                 <div className='w-[50%] h-full mr-72'>
-                    <ul className='hidden xl:flex items-center gap-2 mt-8'>
+                    <ul className='hidden xl:flex items-center gap-2 mt-6'>
                         {['Home', 'Shop', 'Stores', 'Mega Menu', 'Pages', 'Account'].map((item) => (
                             <li className='flex items-center gap-0'>
                                 <h2>{item}</h2>
@@ -80,9 +80,9 @@ const Navbar = () => {
                         <li className='gap-2'>Docs</li>
                     </ul>
                 </div>
-                <div className='lg:hidden relative flex items-center justify-center h-14 w-24 rounded-lg border-2 border-gray-600'>
+                <div className='bg-[#f0f3f2] lg:hidden relative flex items-center justify-center h-14 w-14 rounded-lg border-2 mr-8 sm:mr-6'>
                     <button onClick={() => setIsOpen((prev) => !prev)}
-                        className="p-4 w-full active:border-white duration-300 active:text-white">
+                        className="p-1 w-full duration-300 active:text-white">
                         {!isOpen ? <MenuIcon /> : <ArrowDropUpIcon />}
                     </button>
                     {isOpen && <Menu />}
