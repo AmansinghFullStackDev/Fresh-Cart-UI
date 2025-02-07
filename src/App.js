@@ -9,6 +9,7 @@ import Discount from './Components/DiscountOffer/Discount';
 import PopularProducts from './Components/PopularProducts/PopularProducts';
 import SellingProducts from './Components/SellingProduct/SellingProducts';
 import Info from './Components/Info/Info';
+import Menu from './Components/Navbar/Menu';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <MiniNavbar />
 
       <Navbar />
+      {/* <Menu /> */}
       {/*
       <div className='h-[90vh] w-[83%] overflow-hidden ml-28 pt-5'>
         <img src={BackgroundImage} alt='bg'

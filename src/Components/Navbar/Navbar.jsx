@@ -10,20 +10,22 @@ import GridViewOutlinedIcon from '@mui/icons-material/GridViewOutlined';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useState } from "react";
+import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
+import Menu from './Menu';
 
 
 const Navbar = () => {
-    const [menu, setMenu] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
 
 
     return (
-        <div className="h-[25vh] w-full">
+        <section className="h-[25vh] w-full">
             <div className="h-1/2 flex items-center justify-evenly">
                 <div className='flex items-center w-[19%] h-[50%]'>
                     <ShoppingCartIcon style={{ color: '#76d176', height: '45px', width: '55px' }} />
-                    <h1 className='font-bold sm:text-2xl xl:text-4xl'>FreshCart</h1>
+                    <h1 className='font-bold hidden sm:block sm:text-xs md:text-2xl xl:text-4xl'>FreshCart</h1>
                 </div>
-                <div className="w-[40%] flex gap-4">
+                <div className="w-[40%] flex md:gap-4">
 
                     <div className="relative w-full max-w-sm">
                         <input
@@ -41,11 +43,11 @@ const Navbar = () => {
                         <input
                             type="text"
                             placeholder="Location"
-                            className=" w-[8rem] pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500"
+                            className=" w-5 sm:w-32 pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500"
                         />
                     </div>
                 </div>
-                <div className='hidden md:flex items-center md:w-[15%] h-[50%] md:gap-3 lg:gap-9 md:pl-3 lg:pl-6'>
+                <div className='hidden xl:flex items-center md:w-[15%] h-[50%] md:gap-3 lg:gap-9 md:pl-3 lg:pl-6'>
                     <Badge badgeContent={4} color='success' className='text-gray-500'>
                         <FavoriteBorderIcon />
                     </Badge>
@@ -57,7 +59,7 @@ const Navbar = () => {
             </div>
 
 
-            <div className="h-1/2  bg-purple-400 flex items-center justify-cente">
+            <div className="h-1/2 flex items-center justify-between bg-red-500 ">
                 <div className='w-[28%] h-full pt-3'>
                     <div style={{ backgroundColor: '#0aad0a' }}
                         className="w-[65%] h-[80%] hidden lg:flex items-center justify-center gap-1 text-1xl border border-black ml-28 rounded-lg">
@@ -65,8 +67,8 @@ const Navbar = () => {
                         <h1 style={{ color: 'white', fontWeight: 'bold' }}>All Departments</h1>
                     </div>
                 </div>
-                <div className='w-[48%] h-full'>
-                    <ul className='hidden xl:flex items-center gap-2 pl-2 mt-6 '>
+                <div className='w-[50%] h-full mr-72'>
+                    <ul className='hidden xl:flex items-center gap-2 mt-8'>
                         {['Home', 'Shop', 'Stores', 'Mega Menu', 'Pages', 'Account'].map((item) => (
                             <li className='flex items-center gap-0'>
                                 <h2>{item}</h2>
@@ -78,11 +80,16 @@ const Navbar = () => {
                         <li className='gap-2'>Docs</li>
                     </ul>
                 </div>
-                <div className=' md:hidden border border-gray-700 ml-40 h-14 w-14 text-center pt-3 rounded-lg '>
-                    <MenuIcon />
+                <div className='lg:hidden relative flex items-center justify-center h-14 w-24 rounded-lg border-2 border-gray-600'>
+                    <button onClick={() => setIsOpen((prev) => !prev)}
+                        className="p-4 w-full active:border-white duration-300 active:text-white">
+                        {!isOpen ? <MenuIcon /> : <ArrowDropUpIcon />}
+                    </button>
+                    {isOpen && <Menu />}
                 </div>
             </div>
-        </div>
+
+        </section >
     );
 
 }
