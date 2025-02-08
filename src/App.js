@@ -41,16 +41,17 @@ function App() {
       </div>
 
 
-      {/*   
-      <PopularProducts /> 
 
-      <div className='h-[5vh] w-[83%] text-black text-2xl font-semibold mt-24 ml-28'>
+      <PopularProducts />
+
+      {/* <div className='h-auto w-[83%] text-black text-lg lg:text-2xl font-semibold mt-24 mx-auto'>
         <p>Daily Best Sells</p>
       </div>
-      <SellingProducts /> 
+      <SellingProducts />
 
-      <Info /> 
 
+      <Info /> */}
+      {/*
       <div className='bg-green-500 h-80 mt-5'>
         <p>dwbvgfqewjbgoewgvwebg</p>
       </div> */}

@@ -7,10 +7,11 @@ import AddIcon from '@mui/icons-material/Add';
 
 const SellingProducts = () => {
 	return (
-		<main className='h-[83vh] w-[83%] ml-28 pt-3 flex gap-5'>
-			<div className='h-[80%] w-[22%] rounded-2xl overflow-hidden'>
+		<main className='h-[520px] w-[83%] mx-auto pt-3 flex gap-5 bg-green-500'>
+
+			<div className='h-[437px] bg-yellow-800 rounded-2xl overflow-hidden'>
 				<img src={Sell} alt="Sell"
-					className='object-contain h-[100%] '
+					className='object-contain h-full'
 				/>
 			</div>
 			<section className='w-[78%] grid grid-cols-3 gap-3'>

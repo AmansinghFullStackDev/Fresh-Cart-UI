@@ -5,27 +5,28 @@ import StarHalfIcon from '@mui/icons-material/StarHalf';
 
 const PopularProducts = () => {
     return (
-        <div className='w-[83%] ml-28 mt-24'>
-            <p className='font-semibold text-2xl'>Popular Products</p>
-            <div className='grid grid-cols-5 mt-6 gap-3 rounded-xl'>
+        <div className='h-full w-[83%] mx-auto mt-20'>
+
+            <p className='font-semibold text-lg md:text-2xl'>Popular Products</p>
+
+            <div className='w-full h-full pt-6
+            grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4'>
                 {PopularProductList.map((item) => (
-                    <div className='h-[52vh] w-full border border-gray-200 rounded-lg pt-6'>
+                    <div className='h-[310px]  w-[255px] mx-auto sm:w-full rounded-lg border-2 border-gray-300'>
 
                         {/* Image Section */}
-                        <div className='pt-2 pl-9'>
-                            <img src={item.image} alt={item.title}
-                                className='object-contain w-36 h-36'
-                            />
+                        <div className='w-[150px] pt-6 mx-auto'>
+                            <img src={item.image} alt={item.title} />
                         </div>
 
                         {/* Description Section */}
-                        <div className='pl-9 py-2'>
-                            <span className='text-xs text-gray-300'>{item.description}</span>
-                            <h1 className='text-base text-black font-semibold'>{item.title}</h1>
+                        <div className=' h-[55px] w-[180px] mx-auto'>
+                            <span className='sm:text-xs text-gray-300'>{item.description}</span>
+                            <h1 className='sm:text-base text-black font-semibold'>{item.title}</h1>
                         </div>
 
                         {/* Rating Section */}
-                        <div className='w-[70%] pl-9 flex items-center gap-1'>
+                        <div className='w-[180px] mx-auto flex items-center gap-1'>
                             <div className='flex items-center'>
                                 {[1, 1, 1, 1].map((item) => (
                                     <StarIcon className='text-yellow-400' style={{ fontSize: '18' }} />
@@ -36,7 +37,7 @@ const PopularProducts = () => {
                         </div>
 
                         {/* Price section */}
-                        <div className='w-[80%] h-[15%] ml-9 mt-2 flex items-center justify-between'>
+                        <div className='w-[180px] mx-auto mt-2 flex items-center justify-between'>
                             <div className='font-semibold text-base '>
                                 <span className='text-xs text-black'>{item.price}</span>
                                 <span className='text-xs text-gray-300 line-through'>{item.oldprice}</span>
@@ -45,9 +46,12 @@ const PopularProducts = () => {
                                 <h1>+Add</h1>
                             </div>
                         </div>
+
                     </div>
                 ))}
             </div>
+
+
         </div>
     )
 }
