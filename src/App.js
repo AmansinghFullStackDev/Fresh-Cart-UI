@@ -44,10 +44,11 @@ function App() {
 
       <PopularProducts />
 
-      {/* <div className='h-auto w-[83%] text-black text-lg lg:text-2xl font-semibold mt-24 mx-auto'>
+      <div className='h-auto w-[83%] text-black text-lg lg:text-2xl font-semibold mt-24 mx-auto'>
         <p>Daily Best Sells</p>
       </div>
-      <SellingProducts />
+      {/*
+       <SellingProducts />
 
 
       <Info /> */}
