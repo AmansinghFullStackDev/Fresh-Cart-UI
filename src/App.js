@@ -18,13 +18,13 @@ function App() {
 
       <Navbar />
 
-      <div className='h-full w-[83%] overflow-hidden ml-10 sm:ml-14 md:ml-20 xl:ml-28 pt-5'>
+      <div className='h-auto w-[83%] overflow-hidden ml-10 sm:ml-14 md:ml-20 xl:ml-28 pt-5'>
         <img src={BackgroundImage} alt='bg'
-          className='rounded-2xl h-auto w-auto'
+          className='rounded-2xl h-auto w-full'
         />
       </div>
 
-      <div className='h-[40vh] w-[83%] ml-8 sm:ml-14 md:ml-20 xl:ml-28 pt-5 mt-8'>
+      <div className='w-[83%] ml-8 sm:ml-14 md:ml-20 xl:ml-28 pt-5 mt-8 mb-20'>
         <div className='h-[10%] w-full text-base sm:text-xl flex items-center justify-between font-semibold'>
           <p>Featured Categories</p>
           <div className='flex items-center justify-end gap-5 border border-gray-100 '>
@@ -36,8 +36,11 @@ function App() {
         <ProductsComponents />
       </div>
 
+      <div>
+        <Discount />
+      </div>
 
-      <Discount />
+
       {/*   
       <PopularProducts /> 
 

@@ -15,14 +15,19 @@ const offer = [
 
 const Discount = () => {
     return (
-        <div className='h-[35vh] w-[83%] ml-28 mt-20 grid grid-cols-2 gap-3'>
+        <div className='min-h-[35vh] w-[83%] mx-auto mt-20 grid lg:grid-cols-2 gap-3'>
             {offer.map((item) => (
-                <div className='h-full w- overflow-hidden rounded-3xl'>
-                    <img src={item.image} alt={item.title} className='object-cover w-full h-full ' />
+                <div className='h-full w-full overflow-hidden rounded-3xl'>
+                    <img
+                        src={item.image}
+                        alt={item.title}
+                        className='object-cover w-full h-auto'
+                    />
                 </div>
             ))}
         </div>
     )
 }
+
 
 export default Discount

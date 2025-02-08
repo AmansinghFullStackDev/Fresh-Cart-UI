@@ -31,19 +31,22 @@ const Navbar = () => {
                         <input
                             type="text"
                             placeholder="Search for products"
-                            className="w-full pl-4 pr-10 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500"
+                            className="w-full pl-4 pr-10 py-2 border border-gray-300 rounded-lg 
+                            focus:outline-none focus:ring-2 focus:ring-cyan-500"
                         />
                         <SearchIcon className="absolute right-3 top-1/2 transform -translate-y-1/2 text-black" />
                     </div>
 
                     <div className="relative ml-3">
-                        <div className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500 pointer-events-none">
+                        <div className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500 
+                        pointer-events-none">
                             <LocationOnOutlinedIcon />
                         </div>
                         <input
                             type="text"
                             placeholder="Location"
-                            className=" w-5 sm:w-32 pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500"
+                            className=" w-5 sm:w-32 pl-10 pr-4 py-2 border border-gray-300 rounded-lg 
+                            focus:outline-none focus:ring-2 focus:ring-cyan-500"
                         />
                     </div>
                 </div>
@@ -59,15 +62,16 @@ const Navbar = () => {
             </div>
 
 
-            <div className="h-1/2 flex items-center justify-between">
+            <div className="h-1/2 flex items-center">
                 <div className='w-[28%] h-full pt-3'>
                     <div style={{ backgroundColor: '#0aad0a' }}
-                        className="w-[65%] h-[80%] hidden lg:flex items-center justify-center gap-1 text-1xl border border-black ml-28 rounded-lg">
+                        className="w-[65%] h-[80%] hidden lg:flex items-center justify-center gap-1 text-1xl
+                         border border-black ml-28 rounded-lg">
                         <GridViewOutlinedIcon style={{ color: '#ffff' }} />
                         <h1 style={{ color: 'white', fontWeight: 'bold' }}>All Departments</h1>
                     </div>
                 </div>
-                <div className='w-[50%] h-full mr-72'>
+                <div className='w-[50%] h-full'>
                     <ul className='hidden xl:flex items-center gap-2 mt-6'>
                         {['Home', 'Shop', 'Stores', 'Mega Menu', 'Pages', 'Account'].map((item) => (
                             <li className='flex items-center gap-0'>
@@ -80,7 +84,8 @@ const Navbar = () => {
                         <li className='gap-2'>Docs</li>
                     </ul>
                 </div>
-                <div className='bg-[#f0f3f2] lg:hidden relative flex items-center justify-center h-14 w-14 rounded-lg border-2 mr-8 sm:mr-6'>
+                <div className='bg-[#f0f3f2] lg:hidden ml-20 relative flex items-center justify-center h-14 w-14 
+                rounded-lg border-2'>
                     <button onClick={() => setIsOpen((prev) => !prev)}
                         className="p-1 w-full duration-300 active:text-white">
                         {!isOpen ? <MenuIcon /> : <ArrowDropUpIcon />}
